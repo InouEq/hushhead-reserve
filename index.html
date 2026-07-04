@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<style>
+html,body{
+    margin:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<iframe id="gasiframe"></iframe>
+
+<script>
+
+const gasappurl =
+"https://script.google.com/macros/s/AKfycbxhW1dF8n_8Wggi2hT8wgcCevfCEQq5IlmEJBwzwfRufu8bNeUlPtTcb5JVnc8BJkAu/exec";
+
+window.onload = () => {
+    document.getElementById("gasiframe").src =
+        gasappurl + window.location.search;
+}
+
+</script>
+
+</body>
+</html>
